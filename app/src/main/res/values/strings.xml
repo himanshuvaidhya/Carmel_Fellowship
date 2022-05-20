@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Carmel_Fellowship</string>
+    <string name="app_name">Carmel Fellowship</string>
+    <string name="carmel_songs">Carmel Song\'s</string>
+    <string name="bible_videos">Bible Videos</string>
+    <string name="daily_verse">Daily Verse</string>
+    <string name="audio_bible">Audio Bible</string>
+    <string name="video_message">Video Messages</string>
+    <string name="meeting">Meeting</string>
 </resources>

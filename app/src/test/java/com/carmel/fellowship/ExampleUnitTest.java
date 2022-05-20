@@ -1,4 +1,4 @@
-package com.example.carmel_fellowship;
+package com.carmel.fellowship;
 
 import org.junit.Test;
 

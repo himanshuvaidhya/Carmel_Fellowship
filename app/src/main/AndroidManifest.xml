@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.carmel_fellowship">
+    package="com.carmel.fellowship">
 
     <application
         android:allowBackup="true"
@@ -10,25 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Carmel_Fellowship">
         <activity
-            android:name=".meeting1"
+            android:name="com.carmel.fellowship.meeting1"
             android:exported="false" />
         <activity
-            android:name=".video_messages1"
+            android:name="com.carmel.fellowship.video_messages1"
             android:exported="false" />
         <activity
-            android:name=".daily_verse1"
+            android:name="com.carmel.fellowship.daily_verse1"
             android:exported="false" />
         <activity
-            android:name=".audio_bible1"
+            android:name="com.carmel.fellowship.audio_bible1"
             android:exported="false" />
         <activity
-            android:name=".bible_videos1"
+            android:name="com.carmel.fellowship.bible_videos1"
             android:exported="false" />
         <activity
-            android:name=".carmel_songs1"
+            android:name="com.carmel.fellowship.carmel_songs1"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.carmel.fellowship.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

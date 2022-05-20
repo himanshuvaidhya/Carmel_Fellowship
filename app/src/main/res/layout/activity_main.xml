@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="com.carmel.fellowship.MainActivity"
     android:background="@drawable/cut_backgrond">
-    <android.support.v4.widget.DrawerLayout
+    <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
@@ -17,7 +17,7 @@
         android:columnCount="2"
         android:rowCount="3"
         android:layout_margin="20dp">
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/carmel_songs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,28 +28,27 @@
             android:layout_column="0"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            app:cardUseCompatPadding="true">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
+            app:cardUseCompatPadding="true"
+            tools:targetApi="lollipop">
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_person"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Carmel Song's"
-                android:textSize="18dp"
-                android:textColor="@color/black"/>
-
-
-        </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_person"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/carmel_songs"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:id="@+id/bible_videos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,14 +73,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bible Videos"
+                    android:text="@string/bible_videos"
                     android:textSize="18dp"
                     android:textColor="@color/black"/>
 
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:id="@+id/audio_bible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -106,14 +105,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="     Audio Bible     "
+                    android:text="@string/audio_bible"
                     android:textSize="18dp"
                     android:textColor="@color/black"/>
 
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:id="@+id/daily_verse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -138,14 +137,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Daily Verse"
+                    android:text="@string/daily_verse"
                     android:textSize="18dp"
                     android:textColor="@color/black"/>
 
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:id="@+id/video_messages"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -170,14 +169,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Video Messages"
+                    android:text="@string/video_message"
                     android:textSize="18dp"
                     android:textColor="@color/black"/>
 
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:id="@+id/meeting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -202,13 +201,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="        Meeting     "
+                    android:text="@string/meeting"
                     android:textSize="18dp"
                     android:textColor="@color/black"/>
 
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
 
