@@ -1,12 +1,25 @@
 package com.carmel.fellowship;
 
 import android.content.Intent;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.cardview.widget.CardView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import android.view.View;
+import android.widget.GridLayout;
+import android.widget.Toolbar;
+
+import com.carmel.fellowship.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
+    DrawerLayout drawerLayout;
+
+    ActivityMainBinding binding;
 
     CardView carmel_songs;
     CardView bible_videos;
@@ -20,6 +33,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        drawerLayout = findViewById(R.id.drawer_layout);
+        binding=ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        binding.sideNav.setNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()){
+                case R.id.video_messages:
+                    Intent v = new Intent(this, video_messages1.class);
+                    startActivity(v);
+                    break;
+                case R.id.daily_verse:
+                    Intent d = new Intent(this, daily_verse1.class);
+                    startActivity(d);
+                    break;
+                case R.id.meeting:
+                    Intent m = new Intent(this, meeting1.class);
+                    startActivity(m);
+                    break;
+
+            }
+            return true;
+        });
+        binding.bottomNav.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()){
+                case R.id.video_messages:
+                    Intent v = new Intent(this, video_messages1.class);
+                    startActivity(v);
+                    break;
+                case R.id.daily_verse:
+                    Intent d = new Intent(this, daily_verse1.class);
+                    startActivity(d);
+                    break;
+                case R.id.meeting:
+                    Intent m = new Intent(this, meeting1.class);
+                    startActivity(m);
+                    break;
+
+            }
+            return true;
+        });
+
+
         carmel_songs=findViewById(R.id.carmel_songs);
         bible_videos=findViewById(R.id.bible_videos);
         audio_bible=findViewById(R.id.audio_bible);

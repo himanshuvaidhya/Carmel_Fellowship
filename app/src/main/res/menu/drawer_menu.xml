@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <group android:checkableBehavior="single">
+        <item android:id="@+id/carmel_songs"
+            android:icon="@drawable/ic_person"
+            android:title="@string/carmel_songs"/>
+
+        <item android:id="@+id/bible_videos"
+            android:icon="@drawable/ic_person"
+            android:title="@string/bible_videos"/>
+
+        <item android:id="@+id/audio_bible"
+            android:icon="@drawable/ic_person"
+            android:title="@string/audio_bible"/>
+
+    <item android:id="@+id/video_messages"
+        android:icon="@drawable/ic_person"
+        android:title="@string/video_message"/>
+
+    <item android:id="@+id/daily_verse"
+        android:icon="@drawable/ic_person"
+        android:title="@string/daily_verse"/>
+
+    <item android:id="@+id/meeting"
+        android:icon="@drawable/ic_person"
+        android:title="@string/meeting"/>
+        </group>
+
+</menu>

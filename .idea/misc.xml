@@ -7,11 +7,12 @@
         <entry key="app/src/main/res/layout/activity_audio_bible1.xml" value="0.16757246376811594" />
         <entry key="app/src/main/res/layout/activity_bible_videos1.xml" value="0.16757246376811594" />
         <entry key="app/src/main/res/layout/activity_carmel_songs1.xml" value="0.16757246376811594" />
-        <entry key="app/src/main/res/layout/activity_daily_verse1.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16757246376811594" />
-        <entry key="app/src/main/res/layout/activity_meeting1.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_daily_verse1.xml" value="0.16757246376811594" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_meeting1.xml" value="0.16757246376811594" />
         <entry key="app/src/main/res/layout/activity_video_messages1.xml" value="0.16757246376811594" />
         <entry key="app/src/main/res/layout/header_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.18" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.23125" />
       </map>
     </option>
