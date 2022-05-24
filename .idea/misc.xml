@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1234375" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/bible_videos.xml" value="0.1605" />
         <entry key="app/src/main/res/drawable/cut_backgrond.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_menu_open.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_volume_off_grey_24dp.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_volume_up_grey_24dp.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/search_degin.xml" value="0.1605" />
         <entry key="app/src/main/res/layout/activity_audio_bible1.xml" value="0.16757246376811594" />
         <entry key="app/src/main/res/layout/activity_bible_videos1.xml" value="0.16757246376811594" />
         <entry key="app/src/main/res/layout/activity_carmel_songs1.xml" value="0.16757246376811594" />
