@@ -6,21 +6,38 @@
     android:layout_height="match_parent"
     tools:context="com.carmel.fellowship.MainActivity"
     android:background="@drawable/cut_backgrond">
+
+
     <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/side_nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_menu"
+        app:menu="@menu/drawer_menu">
 
+    </com.google.android.material.navigation.NavigationView>
 
-    <GridLayout
+        <GridLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/grid_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:columnCount="2"
         android:rowCount="3"
-        android:layout_margin="20dp">
+        android:layout_margin="20dp"
+        android:paddingBottom="30dp">
         <androidx.cardview.widget.CardView
             android:id="@+id/carmel_songs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -37,21 +54,21 @@
                 android:gravity="center"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_person"/>
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/song_lyrics"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/carmel_songs"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:textColor="@color/black"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/bible_videos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -67,14 +84,14 @@
                 android:gravity="center"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_person"/>
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bible_videos"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bible_videos"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:textColor="@color/black"/>
 
 
@@ -82,8 +99,8 @@
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/audio_bible"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -99,14 +116,14 @@
                 android:gravity="center"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_person"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/audio_bible"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/audio_bible"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:textColor="@color/black"/>
 
 
@@ -114,8 +131,8 @@
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/daily_verse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -131,23 +148,21 @@
                 android:gravity="center"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_person"/>
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/daily_verse"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/daily_verse"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:textColor="@color/black"/>
-
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/video_messages"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -163,14 +178,14 @@
                 android:gravity="center"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_person"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/video_messages"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/video_message"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:textColor="@color/black"/>
 
 
@@ -178,8 +193,8 @@
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/meeting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -195,15 +210,16 @@
                 android:gravity="center"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_person"/>
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/meetings_info"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/meeting"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:textColor="@color/black"/>
+
 
 
             </LinearLayout>
@@ -211,7 +227,34 @@
 
 
 
-
     </GridLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
 
+
+    <!--    bottom navigation view-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:background="@color/white"
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/main_menu"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
