@@ -6,4 +6,7 @@
     <string name="audio_bible">Audio Bible</string>
     <string name="video_message">Video Messages</string>
     <string name="meeting">Meeting</string>
+    <string name="About_Us">About Us</string>
+    <string name="navgation_open">Open</string>
+    <string name="navgation_close">close</string>
 </resources>

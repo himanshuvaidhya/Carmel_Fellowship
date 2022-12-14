@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.carmel.fellowship">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/carmel_fellowship_logo"
@@ -10,25 +12,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Carmel_Fellowship">
         <activity
-            android:name="com.carmel.fellowship.meeting1"
+            android:name=".LoginAdmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SingupAdmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".meeting1"
             android:exported="false" />
         <activity
-            android:name="com.carmel.fellowship.video_messages1"
+            android:name=".video_messages1"
             android:exported="false" />
         <activity
-            android:name="com.carmel.fellowship.daily_verse1"
+            android:name=".daily_verse1"
             android:exported="false" />
         <activity
-            android:name="com.carmel.fellowship.audio_bible1"
+            android:name=".audio_bible1"
             android:exported="false" />
         <activity
-            android:name="com.carmel.fellowship.bible_videos1"
+            android:name=".bible_videos1"
             android:exported="false" />
         <activity
-            android:name="com.carmel.fellowship.carmel_songs1"
+            android:name=".carmel_songs1"
             android:exported="false" />
         <activity
-            android:name="com.carmel.fellowship.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

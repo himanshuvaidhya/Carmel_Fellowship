@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "252592978666",
+    "project_id": "carmel-fellowship",
+    "storage_bucket": "carmel-fellowship.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252592978666:android:67652af160411527367593",
+        "android_client_info": {
+          "package_name": "com.carmel.fellowship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252592978666-jrpm4f268pcja0v7c8h5rpblgq90vvg7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.carmel.fellowship",
+            "certificate_hash": "2f22ea76d79e15fb8738428f495032d12333a60b"
+          }
+        },
+        {
+          "client_id": "252592978666-eot6129mvc2f2f7f21u9f2pqd1sdj8t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChaOLKyU2ff48VXevvhgMgt6fGW8hmlDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252592978666-eot6129mvc2f2f7f21u9f2pqd1sdj8t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
